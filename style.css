@@ -35,6 +35,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -43,7 +49,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
     background-image: linear-gradient(rgba(7, 10, 9, 0.82), rgba(7, 10, 9, 0.95)), url('../soccer_stadium.jpg');
     background-size: cover;
@@ -806,6 +811,10 @@ section {
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 16px;
+    }
+    
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -847,14 +856,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .header-btn {
-        display: none; /* Hide header btn on small screens */
-    }
-    
-    .nav {
-        gap: 16px;
-    }
-    
     .hero-title {
         font-size: 2.2rem;
     }
@@ -871,6 +872,97 @@ section {
         flex-direction: column;
         gap: 16px;
         text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        height: 70px;
+    }
+    
+    .logo-text {
+        font-size: 1.15rem;
+    }
+    
+    .logo-img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+    
+    .nav {
+        display: none; /* Esconder navegação de links no mobile */
+    }
+    
+    .header-btn {
+        display: inline-flex; /* Manter o botão "Criar meu grupo" ativo */
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+    
+    .hero {
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+    
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mockup-frame {
+        max-width: 100%;
+    }
+    
+    .mockup-sidebar {
+        display: none; /* Esconder a barra lateral da mockup para economizar espaço e evitar estouro */
+    }
+    
+    .mockup-body {
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .mockup-content {
+        padding: 16px;
+    }
+    
+    .mockup-teams {
+        grid-template-columns: 1fr; /* Mudar times para coluna única */
+        gap: 10px;
+    }
+    
+    .mockup-card {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Escalar levemente o card do FIFA para caber perfeitamente em telas de até 320px sem gerar scroll */
+    .fifa-card-wrapper {
+        transform: scale(0.9);
+        transform-origin: center center;
+    }
+    
+    .fifa-card-wrapper {
+        margin: -20px 0; /* Ajuste compensatório de margem */
+    }
+    
+    .btn-arch {
+        font-size: 0.85rem;
+        padding: 10px 14px;
     }
 }
 
