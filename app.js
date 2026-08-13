@@ -11,7 +11,7 @@ const ARCHETYPES = {
         cardBg: "linear-gradient(135deg, #e3c46b 0%, #a98330 50%, #dfb74a 100%)",
         shadow: "0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(227, 196, 107, 0.15)",
         avatarColor: "#ffd700",
-        avatarImg: "/player_artilheiro.jpg"
+        avatarImg: "player_artilheiro.jpg"
     },
     xerife: {
         name: "ZÉ XERIFE",
@@ -22,7 +22,7 @@ const ARCHETYPES = {
         cardBg: "linear-gradient(135deg, #e3c46b 0%, #a98330 50%, #dfb74a 100%)",
         shadow: "0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(227, 196, 107, 0.15)",
         avatarColor: "#ffffff",
-        avatarImg: "/player_xerife.jpg"
+        avatarImg: "player_xerife.jpg"
     },
     garcon: {
         name: "MAESTRA PELEGRINI",
@@ -33,7 +33,7 @@ const ARCHETYPES = {
         cardBg: "linear-gradient(135deg, #e3c46b 0%, #a98330 50%, #dfb74a 100%)",
         shadow: "0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(227, 196, 107, 0.15)",
         avatarColor: "#10b981",
-        avatarImg: "/player_garcom.jpg"
+        avatarImg: "player_garcom.jpg"
     },
     perna: {
         name: "PERNA DE PAU",
@@ -44,7 +44,7 @@ const ARCHETYPES = {
         cardBg: "linear-gradient(135deg, #a87955 0%, #6b4427 50%, #9c6c4a 100%)",
         shadow: "0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(168, 121, 85, 0.15)",
         avatarColor: "#ff7f50",
-        avatarImg: "/player_perna.jpg"
+        avatarImg: "player_perna.jpg"
     }
 };
 

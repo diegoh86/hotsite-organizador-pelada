@@ -45,7 +45,7 @@ html {
 body {
     overflow-x: hidden;
     position: relative;
-    background-image: linear-gradient(rgba(7, 10, 9, 0.82), rgba(7, 10, 9, 0.95)), url('/soccer_stadium.jpg');
+    background-image: linear-gradient(rgba(7, 10, 9, 0.82), rgba(7, 10, 9, 0.95)), url('../soccer_stadium.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
