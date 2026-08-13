@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Pelada | Gerencie seu Futebol Inteligente</title>
+    <meta name="description" content="Cansou de cobrar mensalidades no WhatsApp e sortear times desequilibrados? Conheça o Organizador de Pelada, a plataforma definitiva para gerenciar sua pelada de futebol.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/logo_organizador.jpg">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="/logo_organizador.jpg" alt="Logo" class="logo-img">
+                <span class="logo-text">Organizador de <span class="logo-highlight">Pelada</span></span>
+            </a>
+            <nav class="nav">
+                <a href="#dores" class="nav-link">O Drama</a>
+                <a href="#recursos" class="nav-link">Funcionalidades</a>
+                <a href="#cards" class="nav-link">Cards FIFA</a>
+            </nav>
+            <a href="http://localhost:5173" class="btn btn-secondary header-btn" id="nav-cta">Criar meu grupo</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in">🏆 A Champions League da Resenha</div>
+                <h1 class="hero-title fade-in">Chega de passar raiva no grupo do WhatsApp!</h1>
+                <p class="hero-subtitle fade-in">
+                    Organize mensalidades sem cobrar individualmente, sorteie times equilibrados automaticamente e tenha cards estilo FIFA com o seu Overall. Tudo em um só lugar.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="http://localhost:5173" class="btn btn-primary" id="hero-cta">Cadastrar meu grupo grátis</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <!-- Dashboard Interface Preview in CSS -->
+                <div class="mockup-frame">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="mockup-title">Organizador de Pelada</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active">⚽ Peladas</div>
+                            <div class="sidebar-item">🏃 Atletas</div>
+                            <div class="sidebar-item">📊 Scout</div>
+                            <div class="sidebar-item">💰 Financeiro</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-card">
+                                <h3>Times Equilibrados</h3>
+                                <div class="mockup-teams">
+                                    <div class="mockup-team">
+                                        <div class="team-header color-colete-1">Colete Verde</div>
+                                        <div class="team-player">🟢 Juninho (OVR 85)</div>
+                                        <div class="team-player">🟢 Thiago (OVR 79)</div>
+                                        <div class="team-player">🟢 Pedrinho (OVR 72)</div>
+                                    </div>
+                                    <div class="mockup-team">
+                                        <div class="team-header color-colete-2">Colete Preto</div>
+                                        <div class="team-player">⚫ Rafael (OVR 84)</div>
+                                        <div class="team-player">⚫ Marcelo (OVR 78)</div>
+                                        <div class="team-player">⚫ Bruno (OVR 73)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dores Section (O Drama) -->
+    <section id="dores" class="dores">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Organizar pelada é quase um segundo emprego. Né não?</h2>
+                <p class="section-subtitle">Toda semana é a mesma luta. Identificou-se com algum desses dramas?</p>
+            </div>
+            
+            <div class="dores-grid">
+                <!-- Card 1 -->
+                <div class="dor-card">
+                    <div class="dor-icon">💸</div>
+                    <h3 class="dor-title">O Cobrador Chatão</h3>
+                    <p class="dor-desc">Ter que mandar Pix todo mês é chato, mas ficar cobrando a galera individualmente no WhatsApp é pior ainda. Você vira o vilão da pelada.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="dor-card">
+                    <div class="dor-icon">⚖️</div>
+                    <h3 class="dor-title">A Panela Injusta</h3>
+                    <p class="dor-desc">O sorteio no grito sempre acaba beneficiando os "parças" do organizador. Um time vira o Barcelona de 2011 e o outro só passa vergonha.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="dor-card">
+                    <div class="dor-icon">📝</div>
+                    <h3 class="dor-title">A Lista Infinita</h3>
+                    <p class="dor-desc">A lista no WhatsApp vira um caos: gente confirmando de última hora, gente cancelando 10 minutos antes do jogo, convidados flutuantes...</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="dor-card">
+                    <div class="dor-icon">🗣️</div>
+                    <h3 class="dor-title">A Mentira do Scout</h3>
+                    <p class="dor-desc">Quem fez mais gols? Quem deu mais assistências? Na hora do churrasco, todo mundo diz que jogou muito. Faltam dados científicos para a resenha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <section id="recursos" class="recursos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Como o Organizador de Pelada resolve tudo isso:</h2>
+                <p class="section-subtitle">Simples de usar para os atletas, poderoso para os organizadores.</p>
+            </div>
+
+            <div class="recurso-row">
+                <div class="recurso-info">
+                    <div class="recurso-num">01</div>
+                    <h3 class="recurso-title">Sorteio Inteligente de Times</h3>
+                    <p class="recurso-text">
+                        Chega de panelas. Nosso algoritmo analisa o nível técnico dos jogadores (avaliados de 1 a 5 estrelas pelo presidente) e as posições de cada um para gerar times equilibrados instantaneamente. Colete verde contra colete preto sem mimimi.
+                    </p>
+                </div>
+                <div class="recurso-info">
+                    <div class="recurso-num">02</div>
+                    <h3 class="recurso-title">Controle de Caixa Sem Stress</h3>
+                    <p class="recurso-text">
+                        Organize quem é mensalista e quem é convidado (diária). Tenha um fluxo de caixa detalhado com receitas e despesas. Os atletas podem ver a lista de pagamentos e saber quem está inadimplente, sem que você precise mandar mensagens individuais de cobrança.
+                    </p>
+                </div>
+                <div class="recurso-info">
+                    <div class="recurso-num">03</div>
+                    <h3 class="recurso-title">Scout e Estatísticas Reais</h3>
+                    <p class="recurso-text">
+                        Registre gols, assistências e scouts das partidas com o cronômetro do aplicativo. O sistema atualiza a artilharia e a classificação geral do grupo automaticamente. É a prova matemática de quem jogou e quem só correu atrás da bola.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIFA Card Showcase Section -->
+    <section id="cards" class="cards-section">
+        <div class="container cards-container">
+            <div class="cards-intro">
+                <div class="badge">🎴 Player Cards</div>
+                <h2 class="section-title">Ganhe seu Card Estilo FIFA com Overall Real</h2>
+                <p class="section-subtitle">
+                    Nosso aplicativo calcula dinamicamente o seu Overall (OVR) com base nas estatísticas reais das suas últimas peladas. A zueira e a resenha no grupo ganham outro nível.
+                </p>
+                <div class="archetype-buttons">
+                    <button class="btn-arch active" data-arch="artilheiro">O Artilheiro Nato</button>
+                    <button class="btn-arch" data-arch="xerife">O Xerife da Zaga</button>
+                    <button class="btn-arch" data-arch="garcon">O Garçom do Time</button>
+                    <button class="btn-arch" data-arch="perna">O Famoso Perna de Pau</button>
+                </div>
+            </div>
+            
+            <div class="cards-display">
+                <!-- FIFA Card Element -->
+                <div class="fifa-card-wrapper">
+                    <div class="fifa-card gold" id="fifa-card">
+                        <div class="fifa-card-inner">
+                            <div class="card-top">
+                                <div class="card-rating" id="card-ovr">88</div>
+                                <div class="card-pos" id="card-pos">ATA</div>
+                                <div class="card-badge">⚽</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="player_artilheiro.jpg" alt="Jogador" class="player-avatar" id="card-avatar">
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-name" id="card-name">DECO ARTILHEIRO</div>
+                                <div class="card-divider"></div>
+                                <div class="card-stats">
+                                    <div class="stat-col">
+                                        <div class="stat-item"><span class="stat-val" id="stat-1">90</span> <span class="stat-label">RIT</span></div>
+                                        <div class="stat-item"><span class="stat-val" id="stat-2">95</span> <span class="stat-label">CHU</span></div>
+                                        <div class="stat-item"><span class="stat-val" id="stat-3">75</span> <span class="stat-label">PAS</span></div>
+                                    </div>
+                                    <div class="stat-col">
+                                        <div class="stat-item"><span class="stat-val" id="stat-4">84</span> <span class="stat-label">DRI</span></div>
+                                        <div class="stat-item"><span class="stat-val" id="stat-5">30</span> <span class="stat-label">DEF</span></div>
+                                        <div class="stat-item"><span class="stat-val" id="stat-6">70</span> <span class="stat-label">FIS</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Final -->
+    <section class="cta-final">
+        <div class="container text-center">
+            <h2 class="cta-title">Sua pelada merece sair da idade da pedra.</h2>
+            <p class="cta-subtitle">Cadastre seu grupo em menos de 1 minuto e automatize a parte chata.</p>
+            <a href="http://localhost:5173" class="btn btn-primary btn-large" id="footer-cta">Quero criar meu grupo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Organizador de Pelada. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="http://localhost:5173" class="footer-link">Acessar App</a>
+                <span class="separator">|</span>
+                <a href="#dores" class="footer-link">Sobre</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

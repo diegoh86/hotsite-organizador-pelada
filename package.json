@@ -1,0 +1,22 @@
+{
+  "name": "hotsite-organizador-pelada",
+  "version": "1.0.0",
+  "description": "Hotsite de divulgação para o Organizador de Pelada",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite --port 3000 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "pelada",
+    "soccer",
+    "organizer",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
