@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrollAnimations();
     initArchetypeSelector();
     initThreeDEffect();
+    initEnvironmentUrls();
 });
 
 // ==========================================================================
@@ -197,5 +198,18 @@ function initThreeDEffect() {
     
     cardDisplay.addEventListener("mouseleave", () => {
         cardWrapper.style.transform = "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+    });
+}
+
+// ==========================================================================
+// ENVIRONMENT DEPENDENT REDIRECTS (Local Dev vs Production)
+// ==========================================================================
+function initEnvironmentUrls() {
+    const ctaLinks = document.querySelectorAll('#nav-cta, #hero-cta, #footer-cta');
+    const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+    const appUrl = isProduction ? 'https://organizacao-pelada.vercel.app' : 'http://localhost:5173';
+
+    ctaLinks.forEach(link => {
+        link.href = appUrl;
     });
 }
